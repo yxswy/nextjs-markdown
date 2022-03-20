@@ -21,7 +21,7 @@ export default function Home({
         <title>{siteTitle}</title>
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <ul>
+        <ol>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/posts/${id}`}>
@@ -29,7 +29,7 @@ export default function Home({
               </Link>
             </li>
           ))}
-        </ul>
+        </ol>
       </section>
     </Layout>
   )

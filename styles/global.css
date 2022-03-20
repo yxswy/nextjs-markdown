@@ -14,12 +14,21 @@ body {
 }
 
 a {
-  color: #0070f3;
+  /* color: #0070f3; */
+  color: #222222;
+  font-weight: 500;
   text-decoration: none;
+  transition: all 0.11s;
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 7px;
+  border-radius: 4px;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: white;
+  background-color: #0070f3;
+  /* text-decoration: underline; */
 }
 
 img {
@@ -37,4 +46,10 @@ blockquote {
 
 blockquote > p {
   margin: 0;
+}
+
+ol {
+  /* list-style: none; */
+  /* padding: 0; */
+  /* margin: 0; */
 }
