@@ -1,5 +1,5 @@
 ---
-title: "如何用nodejs 生成m3u8然后用html播放"
+title: "nodejs 生成 m3u8 然后用 html 播放"
 date: "2022-03-21"
 ---
 
