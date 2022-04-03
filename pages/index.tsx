@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
+import Layout, { siteTitle } from '../components/homepageLayout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
@@ -21,7 +21,10 @@ export default function Home({
         <title>{siteTitle}</title>
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <ol>
+        <ul>
+          <div className='search-box'>
+            <input type="text" /> <button>搜索</button>
+          </div>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
               <Link href={`/posts/${id}`}>
@@ -29,7 +32,8 @@ export default function Home({
               </Link>
             </li>
           ))}
-        </ol>
+          <a className='reload-button'>刷新</a>
+        </ul>
       </section>
     </Layout>
   )

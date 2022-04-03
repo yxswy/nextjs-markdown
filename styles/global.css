@@ -7,6 +7,7 @@ body {
   line-height: 1.6;
   /* font-size: 14px; */
   overflow-x: hidden;
+  height: 100%;
 }
 
 * {
@@ -47,4 +48,45 @@ blockquote {
 
 blockquote > p {
   margin: 0;
+}
+
+.homepage-main ul {
+  font-size: 18px;
+  list-style: none;
+}
+
+.homepage-main li {
+  display: inline-block;
+}
+
+.homepage-main li a {
+  /* background-color: rgba(0, 0, 0, 0.356); */
+  border-radius: 50px;
+  min-height: 38px;
+  padding: 5px 15px;
+  margin-right: 8px;
+  color: rgb(41, 41, 41);
+}
+
+.homepage-main li a:hover {
+  color: rgb(251, 251, 251);
+}
+
+.search-box {
+  margin-bottom: 14px;
+}
+
+.reload-button {
+  background: #007acc;
+  color: #fff;
+  display: block;
+  height: 3em;
+  line-height: 3em;
+  margin: 0 0.5em;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 4px;
+  box-shadow: 0 3px 10px #0076c39c;
+  cursor: pointer;
+  margin-top: 14px;
 }
