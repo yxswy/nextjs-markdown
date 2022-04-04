@@ -5,7 +5,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
-  /* font-size: 14px; */
   overflow-x: hidden;
   height: 100%;
 }
@@ -15,13 +14,11 @@ body {
 }
 
 a {
-  /* color: #0070f3; */
   font-size: 14px;
   color: #222222;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.11s;
-  display: inline-flex;
   align-items: center;
   padding: 2px 7px;
   border-radius: 4px;
@@ -30,7 +27,6 @@ a {
 a:hover {
   color: white;
   background-color: #0070f3;
-  /* text-decoration: underline; */
 }
 
 img {
@@ -50,34 +46,24 @@ blockquote > p {
   margin: 0;
 }
 
-.homepage-main ul {
-  font-size: 18px;
-  list-style: none;
+.sample-echart {
+  width: 100%;
+  height: 460px;
 }
 
-.homepage-main li {
-  display: inline-block;
-}
+.homepage {
+  ul {
+    padding: 0;
+  }
 
-.homepage-main li a {
-  /* background-color: rgba(0, 0, 0, 0.356); */
-  border-radius: 50px;
-  min-height: 38px;
-  padding: 5px 15px;
-  margin-right: 8px;
-  color: rgb(41, 41, 41);
-}
-
-.homepage-main li a:hover {
-  color: rgb(251, 251, 251);
-}
-
-.search-box {
-  margin-bottom: 14px;
+  li {
+    display: inline-block;
+    min-width: 25%;
+  }
 }
 
 .reload-button {
-  background: #007acc;
+  background-color: #0070f3;
   color: #fff;
   display: block;
   height: 3em;
@@ -86,7 +72,25 @@ blockquote > p {
   text-align: center;
   font-size: 14px;
   border-radius: 4px;
-  box-shadow: 0 3px 10px #0076c39c;
-  cursor: pointer;
   margin-top: 14px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgb(236, 236, 236);
+  padding-top: 45px;
+  a {
+    display: inline-flex;
+    justify-content: center;
+    &:hover {
+      background-color: white;
+      color: #222222;
+    }
+  }
+  span {
+    font-size: 0;
+    display: inline-flex;
+    justify-content: center;
+  }
 }

@@ -5,7 +5,7 @@ import { remark } from "remark";
 import html from "remark-html";
 import { createMarkdownRenderer } from "./markdown/markdown";
 
-const postsDirectory = path.join(process.cwd(), "posts");
+const postsDirectory = path.join(process.cwd(), "markdown-static");
 
 export function getSortedPostsData() {
   // Get file names under /posts

@@ -1,12 +1,15 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/homepageLayout'
-import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
-import Link from 'next/link'
-import Date from '../components/date'
+import type { NextPage } from 'next'
 import { GetStaticProps } from 'next'
 
-export default function Home({
+import Image from 'next/image'
+import Link from 'next/link'
+
+import Layout from '../components/layout'
+import styles from '../styles/utils.module.css'
+import SampleEchart from './echarts/sample'
+import { getSortedPostsData } from '../lib/posts'
+
+const Home: NextPage = ({
   allPostsData
 }: {
   allPostsData: {
@@ -14,30 +17,40 @@ export default function Home({
     title: string
     id: string
   }[]
-}) {
+}) => {
   return (
-    <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+    <Layout home={true}>
+      <div className='homepage'>
+        {/* <div className='app-sidebar'></div> */}
+        <h1>No Happy</h1>
+        <SampleEchart />
+
         <ul>
-          <div className='search-box'>
-            <input type="text" /> <button>搜索</button>
-          </div>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
+          {allPostsData.map(({ id, date, title }, index) => (
+            <li className={styles.listItem} key={id}>
               <Link href={`/posts/${id}`}>
-                <a>{title}</a>
+                <a>{index + 1}. {title}</a>
               </Link>
             </li>
           ))}
-          <a className='reload-button'>刷新</a>
         </ul>
-      </section>
+        <footer className={styles.footer}>
+          <a
+            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Powered by{' '}
+            <span className={styles.logo}>
+              <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            </span>
+          </a>
+        </footer>
+      </div>
     </Layout>
   )
 }
+
 
 export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedPostsData()
@@ -47,3 +60,5 @@ export const getStaticProps: GetStaticProps = async () => {
     }
   }
 }
+
+export default Home
