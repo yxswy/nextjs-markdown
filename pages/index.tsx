@@ -1,4 +1,3 @@
-import type { NextPage } from 'next'
 import { GetStaticProps } from 'next'
 
 import Image from 'next/image'
@@ -9,7 +8,7 @@ import styles from '../styles/utils.module.css'
 import SampleEchart from './echarts/sample'
 import { getSortedPostsData } from '../lib/posts'
 
-const Home: NextPage = ({
+const Home = ({
   allPostsData
 }: {
   allPostsData: {
