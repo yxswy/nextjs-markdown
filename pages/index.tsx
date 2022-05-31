@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 import Layout from '../components/layout'
 import styles from '../styles/utils.module.css'
-import SampleEchart from './echarts/sample'
+// import SampleEchart from './echarts/sample'
 import { getSortedPostsData } from '../lib/posts'
 
 const Home = ({
@@ -21,8 +21,8 @@ const Home = ({
     <Layout home={true}>
       <div className='homepage'>
         {/* <div className='app-sidebar'></div> */}
-        <h1>No Happy</h1>
-        <SampleEchart />
+        {/* <h1>No Happy</h1> */}
+        {/* <SampleEchart /> */}
 
         <ul>
           {allPostsData.map(({ id, date, title }, index) => (
