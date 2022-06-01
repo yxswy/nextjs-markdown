@@ -5,7 +5,15 @@ date: "2022-04-03"
 
 > https://zhuanlan.zhihu.com/p/65059023
 
+> https://blog.csdn.net/chjj0904/article/details/90268813
+
 ### 关于 withCredentials 的小坑
+
+XMLHttpRequest.withCredentials 有什么用?
+
+跨域请求是否提供凭据信息(cookie、HTTP 认证及客户端 SSL 证明等)
+
+也可以简单的理解为，当前请求为跨域类型时是否在请求中协带 cookie。
 
 withCredentials 设置了的时候后端需要添加上相应的域名
 
