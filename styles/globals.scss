@@ -14,13 +14,13 @@ body {
 }
 
 a {
-  font-size: 14px;
+  font-size: 16px;
   color: #222222;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.11s;
   align-items: center;
-  padding: 2px 7px;
+  padding: 1px 7px 2px 7px;
   border-radius: 4px;
 }
 
@@ -58,7 +58,7 @@ blockquote > p {
 
   li {
     display: inline-block;
-    min-width: 25%;
+    min-width: 33%;
   }
 }
 
