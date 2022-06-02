@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+// import Title from 'next/'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
@@ -30,6 +31,7 @@ export default function Layout({
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+          <title>烟熏三文鱼的网站Title</title>
       </Head>
       <header className={styles.header}>
         {home ? (
