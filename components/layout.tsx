@@ -67,6 +67,7 @@ export default function Layout({
         )}
       </header>
         <h1 style={{ 'display': 'none' }}>烟熏三文鱼的网站</h1>
+        <title>烟熏三文鱼的网站Title</title>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
