@@ -24,6 +24,8 @@ const Home = ({
         {/* <h1>No Happy</h1> */}
         {/* <SampleEchart /> */}
 
+        {/*<input type="text"/>*/}
+
         <ul>
           {allPostsData.map(({ id, date, title }, index) => (
             <li className={styles.listItem} key={id}>

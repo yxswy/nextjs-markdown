@@ -20,7 +20,7 @@ export default function Layout({
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="检索一下"
         />
         <meta
           property="og:image"
@@ -66,6 +66,7 @@ export default function Layout({
           </>
         )}
       </header>
+        <h1 style={{ 'display': 'none' }}>烟熏三文鱼的网站</h1>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
