@@ -20,12 +20,6 @@ const Home = ({
   return (
     <Layout home={true}>
       <div className='homepage'>
-        {/* <div className='app-sidebar'></div> */}
-        {/* <h1>No Happy</h1> */}
-        {/* <SampleEchart /> */}
-
-        {/*<input type="text"/>*/}
-
         <ul>
           {allPostsData.map(({ id, date, title }, index) => (
             <li className={styles.listItem} key={id}>
@@ -35,18 +29,7 @@ const Home = ({
             </li>
           ))}
         </ul>
-        <footer className={styles.footer}>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{' '}
-            <span className={styles.logo}>
-              <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-            </span>
-          </a>
-        </footer>
+        <div className="content"></div>
       </div>
     </Layout>
   )

@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  font-size: 16px;
+  font-size: 14px;
   color: #222222;
   font-weight: 500;
   text-decoration: none;
@@ -53,48 +53,36 @@ blockquote > p {
 }
 
 .homepage {
-  ul {
-    padding: 0;
-  }
-
-  li {
-    display: inline-block;
-    min-width: 33%;
-  }
-}
-
-.reload-button {
-  background-color: #0070f3;
-  color: #fff;
-  display: block;
-  height: 3em;
-  line-height: 3em;
-  margin: 0 0.5em;
-  text-align: center;
-  font-size: 14px;
-  border-radius: 4px;
-  margin-top: 14px;
-}
-
-footer {
+  height: calc(100vh - 162px);
   display: flex;
-  justify-content: center;
-  border-top: 1px solid rgb(236, 236, 236);
-  padding-top: 45px;
-  a {
-    display: inline-flex;
-    justify-content: center;
-    &:hover {
-      background-color: white;
-      color: #222222;
+  ul {
+    list-style: none;
+    width: 378px;
+    padding: 0;
+    overflow-y: auto;
+    li {
+      //display: inline-block;
+      //min-width: 33%;
     }
   }
-  span {
-    font-size: 0;
-    display: inline-flex;
-    justify-content: center;
+  .content {
+    flex: 1;
+    width: 1180px;
   }
 }
+
+//.reload-button {
+//  background-color: #0070f3;
+//  color: #fff;
+//  display: block;
+//  height: 3em;
+//  line-height: 3em;
+//  margin: 0 0.5em;
+//  text-align: center;
+//  font-size: 14px;
+//  border-radius: 4px;
+//  margin-top: 14px;
+//}
 
 input {
   outline: none;
