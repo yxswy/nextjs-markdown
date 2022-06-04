@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f551ffad-43e6-4566-9f15-2bb1d64e1e5c" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/markdown-static/二分法.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/markdown-static/凑24 v2.0.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/layout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markdown-static/number[] 凑24.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown-static/凑24 v1.0.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/utils.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/utils.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +37,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "G:/nextjs-markdown",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "pnpm",
-    "ts.external.directory.path": "G:\\ADMIN2.0\\nextjs-markdown\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "G:\\nextjs-markdown\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -61,6 +66,8 @@
       <option name="presentableId" value="Default" />
       <updated>1654137792442</updated>
       <workItem from="1654137793833" duration="3103000" />
+      <workItem from="1654284422625" duration="1570000" />
+      <workItem from="1654355557465" duration="4085000" />
     </task>
     <servers />
   </component>

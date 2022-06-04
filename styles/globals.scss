@@ -43,6 +43,12 @@ blockquote {
   color: #999;
 }
 
+main {
+  width: 86rem;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
 blockquote > p {
   margin: 0;
 }
@@ -56,18 +62,27 @@ blockquote > p {
   height: calc(100vh - 162px);
   display: flex;
   ul {
+    width: 100%;
     list-style: none;
-    width: 378px;
+    //width: 378px;
     padding: 0;
     overflow-y: auto;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
     li {
-      //display: inline-block;
-      //min-width: 33%;
+      display: inline-block;
+      //min-width: 25%;
+      background-color: #f0f2f4;
+      padding: 4px 4px 2px 4px;
+      a {
+        width: 100%;
+        display: inline-block;
+      }
     }
   }
   .content {
-    flex: 1;
-    width: 1180px;
+    //flex: 1;
+    //width: 1180px;
   }
 }
 

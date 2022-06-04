@@ -29,7 +29,8 @@ export default function Layout({
       <header className={styles.header}>
         <img src="https://gw.alicdn.com/tfs/TB1DP0yAoY1gK0jSZFMXXaWcVXa-1190-70.png" alt="淘小铺" style={{
           width: '1190px',
-          height: '70px'
+          height: '70px',
+          display: 'none'
         }} />
       </header>
       <h1 style={{ display: 'none' }}>大标题</h1>
