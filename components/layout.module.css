@@ -1,11 +1,13 @@
 .container {
+  /* background-color: rgb(240, 240, 240); */
+  /* min-height: 100vh; */
   /*width: 86rem;*/
   /*max-width: 1180px;*/
   /*padding: 0 1rem;*/
   /*margin: 42px auto;*/
 }
 
-@media screen and (max-width: 1180px) and (min-width: 980px) {
+/* @media screen and (max-width: 1180px) and (min-width: 980px) {
   .container {
     width: 980px;
   }
@@ -15,7 +17,8 @@
   .container {
     width: 100%;
   }
-}
+} */
+
 .header {
   display: flex;
 }

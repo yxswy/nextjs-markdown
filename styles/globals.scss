@@ -5,7 +5,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
-  overflow-x: hidden;
   height: 100%;
   font-size: 14px;
 }
@@ -44,12 +43,16 @@ blockquote {
 }
 
 main {
-  width: 86rem;
+  width: 80rem;
   max-width: 1180px;
   margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.808);
+  padding: 40px 80px;
+  box-sizing: border-box;
+  min-height: 100vh;
 }
 
-blockquote > p {
+blockquote>p {
   margin: 0;
 }
 
@@ -61,6 +64,7 @@ blockquote > p {
 .homepage {
   height: calc(100vh - 162px);
   display: flex;
+
   ul {
     width: 100%;
     list-style: none;
@@ -69,17 +73,20 @@ blockquote > p {
     overflow-y: auto;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
+
     li {
       display: inline-block;
       //min-width: 25%;
       background-color: #f0f2f4;
       padding: 4px 4px 2px 4px;
+
       a {
         width: 100%;
         display: inline-block;
       }
     }
   }
+
   .content {
     //flex: 1;
     //width: 1180px;
@@ -106,7 +113,41 @@ input {
   width: 450px;
   height: 40px;
   transition: all 0.5s;
+
   &:focus {
     border-color: #666666;
   }
+}
+
+#bgBox {
+  display: block;
+  opacity: 1;
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s, transform .25s, filter .25s;
+  backface-visibility: hidden;
+  filter: blur(10px);
+  transform: scale(1.1);
+}
+
+.cover {
+  opacity: 1;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .5) 100%), radial-gradient(rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, .3) 166%);
+  transition: .25s;
+}
+
+main {
+  position: relative;
+  z-index: 3;
 }

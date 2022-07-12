@@ -33,16 +33,20 @@ export default function Layout({
           display: 'none'
         }} />
       </header>
+      <img id='bgBox' src='/bg.jpeg'/>
+      <div className="cover" id="cover"></div>
       <h1 style={{ display: 'none' }}>大标题</h1>
       <h2 style={{ display: 'none' }}>大标题</h2>
-      <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
+      <main>
+        <div>{children}</div>
+        {/* {!home && (
+          <div className={styles.backToHome}>
+            <Link href="/">
+              <a>← Back to home</a>
+            </Link>
+          </div>
+        )} */}
+      </main>
     </div>
   )
 }
